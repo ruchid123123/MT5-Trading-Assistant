@@ -1,62 +1,53 @@
-# MT5 Trading Assistant
+# MT5 Trading Assistant / MT5 交易助手
 
-## Overview
+## Overview / 项目概览
 
-The MT5 Trading Assistant is a comprehensive Metatrader 5 platform application that provides a graphical user interface (GUI) for calculating and managing positions. This application is designed to help traders efficiently manage their trades and make informed decisions.
+The MT5 Trading Assistant is a comprehensive MetaTrader 5 (MT5) platform application that provides a graphical user interface (GUI) for calculating and managing positions. This application is designed to help traders efficiently manage their trades and make informed decisions.
 
-Buy me a coffee with:
-- Solana: 2a2MnhLNcBgdnmhGya6mk9MiSZSzGL7bKgXTPPWk8y9o
-- Ethereum: 0x9e7DfB8Dd3264d3BEEd78396b70C519ed141b743
-- Bitcoin: bc1qe7yxke5799kycwd97fmlumsxw6lwzdljez0353
+MT5 交易助手是一个功能强大的 MetaTrader 5 (MT5) 平台辅助程序，提供图形用户界面 (GUI) 用于计算和管理仓位。该程序旨在帮助交易者更高效地管理交易并做出明智的决策。
 
-### Screenshot 1
-![Screenshot 1](https://github.com/user-attachments/assets/d0bfcedf-aba3-43b6-9e9b-11272ec9b2c3)
+---
 
+## 🚀 Key Features / 核心功能
 
-## Features
+- **Position Calculation / 仓位计算**: Automatically calculates the recommended lot size based on account balance and risk percentage. (根据账户余额和风险比例自动计算推荐手数。)
+- **Order Management / 订单管理**: Real-time retrieval of MT5 positions and pending orders. (实时获取并管理 MT5 持仓和挂单。)
+- **TTP (Triple Take Profit) Mechanism / 三级止盈机制**: Set up to 3 take profit zones. The program automatically trails the stop loss to breakeven or profit zones as targets are hit. (支持设置 3 级止盈。当达到止盈点时，程序会自动移动止损位至保本或盈利区域。)
+- **Risk Management / 风险管理**: Easily modify or close positions with a single click. (一键修改或平仓，快速控制风险。)
+- **Dark Mode / 深色模式**: Modern GUI with a dark aesthetic for professional trading. (现代感十足的深色模式界面。)
 
-- **Position Calculation**: Calculates the volume to close based on a given percentage, allowing users to easily determine the optimal position size.
-- **Position Retrieval**: Retrieves position details from the MetaTrader 5 (MT5) platform, providing users with real-time information about their trades.
-- **Partial Close Request**: Sends a partial close request to the MT5 platform, enabling users to close a portion of their position.
-- **Fully Close Request**: Sends a close request to the MT5 platform, enabling users to close opened position.
-- **Error Handling**: Handles errors and displays messages to the user, ensuring a seamless and informative experience.
-- **Risk Management**: Offers risk management features, allowing users to set stop loss and take profit levels for their trades.
-- **Trade Management**: Enables users to manage their trades, including modifying and closing positions and pending orders.
-- **Cutting-Edge TTP Mechanism**: Enables users to set up tp 3 take profits for a live position, and it will automatically trail it by adjusting stop loss to take profit zones.
-- **Terminal Log**: Shows all the logs in a log window.
+---
 
-### Screenshot 2
-![Screenshot 2](https://github.com/user-attachments/assets/75d5fb08-7a54-4b5d-aa9e-7300ab72ed7e)
+## 🛠 Installation & Usage / 安装与使用
 
-### Screenshot 3
-![Screenshot 3](https://github.com/user-attachments/assets/f131f7ef-97bc-44b5-bca6-994f9e8f9ce0)
+### For Developers (Running from Source) / 开发者（运行源码）
+1. **Requirements / 要求**: Python 3.9+ (Windows environment recommended).
+2. **Install Dependencies / 安装依赖**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. **Run / 运行**:
+   ```bash
+   python main.py
+   ```
 
-### Screenshot 4
-![Screenshot 4](https://github.com/user-attachments/assets/286365ec-54c2-45a8-ada3-e0764a9bd3a7)
+### For Users / 普通用户
+Simply download the pre-compiled version from the `release/` folder:
+可以直接从 `release/` 文件夹下载预编译版本：
+- **`release/MT5.Trading.Assistant.exe`**
 
-## System Requirements
+---
 
-- **Operating System**: Windows 10 or later
-- **MetaTrader 5 (MT5) Platform**: Must be installed and initialized on the system
-- **.NET Framework**: 4.6 or later
+## 🔍 Reverse Engineering Notes / 逆向说明
+This repository contains both the original binary and the recovered Python source code. For more details on the reverse engineering process, see the [research/](research/) directory.
 
-## Installation
+本仓库包含原始二进制文件以及还原后的 Python 源代码。有关逆向工程的详细过程，请参阅 [research/](research/) 目录。
 
-You don't need to install the MT5 Trading Assistant application, simply run .exe file and enjoy.
+---
 
-
-## Troubleshooting
-
-If you encounter any issues while using the MT5 Trading Assistant application, please refer to the following troubleshooting steps:
-
-- Ensure that the MetaTrader 5 (MT5) platform is installed and that you're logged in (This step only applies for usage of MT5 Order Manager).
-- Check that the .NET Framework is installed and up-to-date.
-- Restart the application and try again.
-
-## License
-
+## License / 许可协议
 The MT5 Trading Assistant application is licensed under the MIT License.
 
-## Acknowledgments
+## Acknowledgments / 致谢
+Originally created by [Reno-codes]. Source code recovered and refined by Gemini CLI Agent.
 
-The MT5 Trading Assistant was created by [Reno-codes].
